@@ -43,8 +43,8 @@ body {
 
 .profile-pic {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
 }
 
 .hero {
@@ -92,33 +92,24 @@ body {
 .grid-item {
     position: relative;
     overflow: hidden;
-            /* text-align: center; */
-            color: white;
 }
 
-.hide {
-    /* display: none; */
+/* .hide {
+    display: none; 
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translate(0, 0);
-}
+} */
 
 .grid-item img {
     width: 100%;
-    display: block;
     transition: transform 0.3s ease;
 }
 
 /* Hover Effect */
 .grid-item:hover img {
     transform: scale(1.1);
-
-}
-
-.grid-item:hover img + .hide {
-    display: block;
-    color: #fff;
 }
 
 .grid-item::after {
@@ -142,16 +133,29 @@ body {
 }
 
 /* Hover Box */
-.grid-item .hover-box {
+.hover-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 195px;  /* Make it stretch across the full width */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: white;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1rem;
+    opacity: 0;  /* Initially hidden */
     transition: opacity 0.3s ease;
+    z-index: 2;
+    /* border-radius: 0 0 8px 8px; */
+}
+
+.hover-box h4{
+    color: #a9a9a9;
+}
+
+.hover-box h2{
+    color: #e50914;
 }
 
 .grid-item:hover .hover-box {

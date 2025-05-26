@@ -1,0 +1,58 @@
+/* Container for the grid items */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* The movie card container */
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Scale the image slightly on hover */
+.movie-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Movie info container (hidden by default) */
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    transform: translateY(100%); /* Hidden by pushing down */
+    transition: transform 0.4s ease-in-out;
+    text-align: center;
+    opacity: 0;
+}
+
+/* Display the movie info on hover */
+.movie-card:hover .movie-info {
+    transform: translateY(0); /* Slide up */
+    opacity: 1; /* Show it */
+}
+
+.movie-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.movie-info p {
+    font-size: 14px;
+    margin: 10px 0 0;
+}
