@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Filmistaan - One Piece</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: white;
+    }
+
+    .movie-banner {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://i.pinimg.com/736x/e5/45/49/e54549ec18a15b38bc1e1d0d57a1f1ac.jpg') no-repeat center center/cover;
+      padding: 2rem;
+    }
+
+    .movie-details {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .poster {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .info {
+      max-width: 600px;
+    }
+
+    .info h1 {
+      margin: 0 0 0.5rem;
+    }
+
+    .rating {
+      background: gold;
+      color: black;
+      padding: 4px 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .cast-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+
+    .cast-card {
+      background: #1e1e1e;
+      border-radius: 10px;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .cast-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .facts,
+    .keywords {
+      margin-top: 1rem;
+    }
+
+    .fact-item,
+    .keyword-item {
+      background: #1e1e1e;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 0.9em;
+    }
+
+    .textarea-review {
+      width: 100%;
+      height: 100px;
+      margin: 1rem 0;
+      border-radius: 10px;
+      border: none;
+      padding: 1rem;
+    }
+
+    .review-output {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .media-gallery img {
+      width: 200px;
+      margin: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .trailer-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .trailer-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="movie-banner">
+    <div class="movie-details">
+      <img id="poster" class="poster" />
+      <div class="info">
+        <h1 id="title"></h1>
+        <p id="genres"></p>
+        <div class="rating" id="rating"></div>
+        <p id="overview"></p>
+        <div class="facts">
+          <p><strong>Written by</strong> Eiichiro Oda, Steven Maeda, Matt Owens</p>
+          <p><strong>Network:</strong> Netflix</p>
+          <p><strong>Director</strong> Marc Jobst, Tim Southam</p>
+          <p><strong>Original Language:</strong> English/Japanese</p>
+          <p><strong>Content Score:</strong> 98 - Ahoy! Adventure ahead!</p>
+        </div>
+        <div class="keywords">
+          <div class="keyword-item">pirate</div>
+          <div class="keyword-item">treasure hunt</div>
+          <div class="keyword-item">straw hat crew</div>
+          <div class="keyword-item">devil fruit</div>
+          <div class="keyword-item">grand line</div>
+          <div class="keyword-item">nakama</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Cast</h2>
+    <div class="cast-grid" id="cast-grid"></div>
+  </div>
+
+  <div class="section">
+    <h2>Season Info</h2>
+    <p><strong>Season 1:</strong> 8 Episodes (2023)</p>
+    <p>Monkey D. Luffy sets out with his crew of misfits to explore the Grand Line and become King of the Pirates by finding the legendary treasure known as the One Piece.</p>
+  </div>
+
+  <div class="section">
+    <h2>Media Gallery</h2>
+    <div class="media-gallery">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjAxN2Y1MDAtYWE1Mi00NzVhLTgxYmEtNzAyOTY3MjcyMmY5XkEyXkFqcGc@._V1_.jpg">
+      <img src="https://m.media-amazon.com/images/M/MV5BZmMyZmI3NTgtMDY4Yy00MWRjLWFkYzAtNTMwYjMyZDNjYjhiXkEyXkFqcGc@._V1_.jpg">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Watch Trailer</h2>
+    <div class="trailer-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MCb13lbVGE0?si=NuKHDHnPGvMuBLfz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Leave a Review</h2>
+    <textarea class="textarea-review" id="reviewInput" placeholder="Write your thoughts..."></textarea>
+    <button onclick="submitReview()">Submit</button>
+    <div class="review-output" id="reviewList"></div>
+  </div>
+
+  <script>
+    const movie = {
+      title: "One Piece",
+      genres: ["Action", "Adventure", "Fantasy"],
+      rating: "8.3",
+      overview: "Monkey D. Luffy sets sail with his crew to find the One Piece and become the King of the Pirates.",
+      poster: "https://www.themoviedb.org/t/p/w500/rVX05xRKS5JhEYQFObCi4lAnZT4.jpg",
+      cast: [
+        { name: "Iñaki Godoy", character: "Monkey D. Luffy", img: "https://image.tmdb.org/t/p/w185/2FxFGYHjXZH2RXCqjG4zILiQWj7.jpg" },
+        { name: "Mackenyu", character: "Roronoa Zoro", img: "https://image.tmdb.org/t/p/w185/kdT5fiE1WkA4k3y6IQUmHFsHCSX.jpg" },
+        { name: "Emily Rudd", character: "Nami", img: "https://image.tmdb.org/t/p/w185/e2fO9Xt5PBVhDV2f5yYh2HFOKDM.jpg" }
+      ]
+    };
+
+    document.getElementById('title').textContent = movie.title;
+    document.getElementById('genres').textContent = movie.genres.join(", ");
+    document.getElementById('rating').textContent = `⭐ ${movie.rating}`;
+    document.getElementById('overview').textContent = movie.overview;
+    document.getElementById('poster').src = movie.poster;
+
+    const castContainer = document.getElementById('cast-grid');
+    movie.cast.forEach(actor => {
+      const card = document.createElement('div');
+      card.className = 'cast-card';
+      card.innerHTML = `
+        <img src="${actor.img}" alt="${actor.name}" />
+        <p><strong>${actor.name}</strong></p>
+        <p>${actor.character}</p>
+      `;
+      castContainer.appendChild(card);
+    });
+
+    const reviews = [];
+
+    function submitReview() {
+      const input = document.getElementById('reviewInput');
+      const text = input.value.trim();
+      if (text) {
+        reviews.push(text);
+        input.value = '';
+        renderReviews();
+      }
+    }
+
+    function renderReviews() {
+      const reviewList = document.getElementById('reviewList');
+      reviewList.innerHTML = reviews.map(r => `<p>\u2022 ${r}</p>`).join('');
+    }
+  </script>
+</body>
+
+</html>

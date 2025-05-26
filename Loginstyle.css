@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #141414;
+}
+
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e152f68-99a2-4f32-a7b0-f8224f5c805b/f9c3cdb7-b5cb-45ac-940d-e64b1d2bc788/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.login-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.login-container {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 60px 68px 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: #9e2b2b;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+}
+
+.login-box {
+  width: 100%;
+  text-align: left;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #9e2b2b;
+}
+
+.input-box {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #9e2b2b;
+  border: none;
+  border-radius: 4px;
+  color: #141414;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.login-btn:hover {
+  background-color: #aa2026;
+  color: #b02323;
+}
+
+.help-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.help-options label,
+.help-options a {
+  font-size: 0.9rem;
+  color: #e50914;
+  text-decoration: none;
+}
+
+.help-options a:hover {
+  text-decoration: underline;
+}
+
+.signup-now {
+  color: #e50914;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.signup-now a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-now a:hover {
+  text-decoration: underline;
+}
+
+.recaptcha-text {
+  color: #e50914;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.recaptcha-text a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.about-us {
+  background-color: #111;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.faq-section {
+  background-color: #111;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.faq-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #000;
+  color: #e50914;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer a {
+  color: #e50914;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 5px 0;
+}
